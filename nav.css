@@ -1,0 +1,66 @@
+
+.cabecalho{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 32px 32px 40px 32px;
+    
+}
+
+.logo{
+   
+    width: 145px;
+    height: 34.05px ;
+}
+
+.busca{
+    
+    width: 752px;
+    height: 56px;
+    border-radius: 8px;
+    background-color: rgba(255, 255, 255, 0.16);
+
+   
+
+}
+
+.search , .menu{
+         display: none;
+}
+
+
+
+.busca::placeholder{
+    font-family: Inter;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    color: #FFFFFF;
+    opacity: 0.64;
+    padding: 14px;
+}
+
+.autor{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-right: 32px;
+    
+}
+
+.autor__imagem{
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    border: 1px solid black;
+    background-image: url("foto.jpg");
+    background-position: 40%;
+    
+    margin-right: 4px;
+    
+}
+.autor__nome{
+    color: white;
+}
+

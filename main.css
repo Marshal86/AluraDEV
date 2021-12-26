@@ -1,0 +1,159 @@
+
+@import url(menu_Esq.css);
+@import url(nav.css);
+
+
+
+
+
+
+
+
+
+/*************************************************************/
+/**********************Menu Central***************************/
+/*************************************************************/
+
+
+.principal{
+    color: white;
+    display:flex ;
+    
+}
+
+
+
+.quadro{
+    width: 752px;
+    height: 366px;
+    background-color: #6BD1FF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 18px;
+    margin-right: 40px;
+    
+}
+
+.quadro__interno{
+    width: 688px ;
+    height: 302px;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.quadro__texto{
+    color: white;
+    width: 656px;
+    height: 234px;
+    background: black;
+    text-align: start;
+    vertical-align: center;
+    font-family: Roboto Mono;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 18px;
+    border: none;
+
+}
+
+.quadro__botao{
+    
+    width: 752px;
+    height: 56px;
+    background-color: rgba(80, 129, 251, 0.08);
+    border-radius: 8px;
+    margin-top: 32px;
+    box-shadow: rgb(0,0,0,0.24);
+    color: white;
+    margin-left: 18px;
+}
+
+/*************************************************************/
+/**********************Menu Direito***************************/
+/*************************************************************/
+
+.menu__direito{
+    display: flex;
+    flex-direction: column;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 18px;
+    letter-spacing: 0.4em;
+    text-transform: uppercase;
+    margin-left: 32px;
+
+}
+
+.menu__direito-projeto{
+
+    width: 272px;
+    height: 56px;
+    background-color: rgba(255, 255, 255, 0.16);
+    border-radius: 8px;
+    margin-bottom: 16px;
+}
+
+.menu__direito-projeto::placeholder , .menu__direito--descricao::placeholder{
+    font-family: Inter;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    opacity: 0.64;
+    padding-left: 14px;
+}
+
+.menu__direito--descricao{
+    width: 272px;
+    height: 80px;
+    background-color: rgba(255, 255, 255, 0.16);
+    border-radius: 8px;
+}
+
+.menu__direito--select{
+    width: 272px;
+    height: 56px;
+    background: rgba(255, 255, 255, 0.16);
+    border-radius: 8px;
+}
+
+.menu__direito--cor{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 272px;
+    height: 56px;
+    background-color: rgba(196, 196, 196, 0.01);
+    border: 1px solid #FFFFFF;
+    box-sizing: border-box;
+    border-radius: 8px;
+    margin-top: 16px;
+    margin-bottom: 32px;
+}
+
+ .menu__direito--cor-cores{
+     width: 256px;
+     height: 40px;
+     background-color: #6BD1FF;
+     border-radius: 4px;
+ }
+
+
+ .menu__direito--botao{
+     width:272px ;
+     height:56px ;
+     background-color: rgba(80, 129, 251, 1);
+     border-radius: 8px;
+     color:rgba(5, 29, 59, 1);
+     ;
+
+
+
+ }
+

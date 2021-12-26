@@ -1,0 +1,120 @@
+@media  (max-width:375px) {
+  
+    .principal{
+      display:flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      margin-left: 16px;
+      margin-right: 16px;
+    }
+    
+    .menu__central{
+        justify-content: center;
+        margin-left: 16px;
+        margin-right: 16px;
+    }
+  
+    .busca{
+        display: none;
+    }
+
+    .search {
+        display: inline;
+        color: white;
+        margin-right: -15px;
+    }
+
+    .menu{
+        display: inline;
+        color: white;
+        
+    }
+
+    .menu__esquerdo{
+        display:none;
+    }
+
+    .autor{
+        display: none;
+        
+    }
+
+  
+    
+       
+    .quadro{
+        width: 343px;
+        height: 492px;
+        background-color: #6BD1FF;
+        display: flex;
+        flex-wrap: wrap;
+        margin-left: 16px;
+        margin-right: 16px;
+       
+        
+    }
+
+    .quadro__interno{
+        width: 279px ;
+        height: 428px;
+        background-color: black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .quadro__texto{
+        color: white;
+        width: 247px;
+        height: 360px;
+        background: black;
+        text-align: start;
+        vertical-align: center;
+        font-family: Roboto Mono;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 18px;
+        border: none;
+    
+    }
+    
+    .quadro__botao{
+        
+        width: 343px !important;
+        height: 56px;
+        background-color: rgba(80, 129, 251, 0.08);
+        border-radius: 8px;
+        margin-top: 32px;
+        box-shadow: rgb(0,0,0,0.24);
+        color: white;
+      
+    }
+
+
+
+
+    .menu__direito-projeto , .menu__direito--descricao ,.menu__direito--select ,.menu__direito--cor ,.menu__direito--botao{
+        width: 343px;
+         
+        }
+    
+        .menu__direito--cor-cores{
+            width: 327px;
+            
+        }
+
+        .menu__direito{
+            margin: 16px;
+        }
+    
+
+
+/* comunidades responsivo*/ 
+
+
+
+
+}
+
