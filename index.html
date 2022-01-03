@@ -4,10 +4,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="all.min.css">
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="estilo.css">
+    <link rel="stylesheet" href="atom-one-light.css">
     <link rel="stylesheet" href="main.css">
     <link rel="stylesheet" href="responsivo.css">
 
@@ -38,13 +40,14 @@
 
                         <div class="principal__codigo">
                             <div class="principal__codigo-img quadrado"><i class="fas fa-code icone"></i></div>
-                            <p>Editor de códigos</p>
+                            <a href="index.html>"><p>Editor de códigos</p></a>
                         </div>
                     
                         <div class="principal__comunidade">
                             <div class="principal__comunidade-img quadrado"><i class="fas fa-users icone"></i></div>
                             <a href="comunidades.html"><p>Editor de comunidades</p></a>
                         </div>
+
             
              </div>
              
@@ -52,12 +55,13 @@
 
                     <div class="quadro">
                         <div class="quadro__interno">
-                            <textarea class="quadro__texto">
-                            /* const pluckDeep = key => obj => key.split('.').reduce((accum, key) => accum[key], obj) const compose = (...fns) => res => fns.reduce((accum, next) => 
-                            next(accum), res) const unfold = (f, seed) => { const go = (f, seed, acc) => 
-                            { const res = f(seed) return res ? go(f, res[1], acc.concat([res[0]])) : acc } 
-                            return go(f, seed, []) } */
-                            </textarea>
+                            <code contenteditable="true" class="quadro__texto">
+                                /* const pluckDeep = key => obj => key.split('.').reduce((accum, key) => 
+                                accum[key], obj) const compose = (...fns) => res => fns.reduce((accum, next)
+                                 => next(accum), res) const unfold = (f, seed) => { const go = (f, seed, acc) => 
+                                { const res = f(seed) return res ? go(f, res[1], acc.concat([res[0]])) : acc } 
+                                return go(f, seed, []) } */
+                                </code>
                         </div>
                     </div>
 
@@ -87,13 +91,17 @@
 
                   </div>
                 
-                   <button class="menu__direito--botao">Salvar Projeto</button>
+                   <button class="menu__direito--botao" data-salvar  >Salvar Projeto</button>
 
             </div>
 
              
          </main>
         
-         <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/js/all.min.js" integrity="sha512-fzff82+8pzHnwA1mQ0dzz9/E0B+ZRizq08yZfya66INZBz86qKTCt9MLU0NCNIgaMJCgeyhujhasnFUsYMsi0Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+         <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/js/all.min.js"integrity="sha512-fzff82+8pzHnwA1mQ0dzz9/E0B+ZRizq08yZfya66INZBz86qKTCt9MLU0NCNIgaMJCgeyhujhasnFUsYMsi0Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+         <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.2/highlight.min.js"></script>
+         <script src="main.js"></script>
+         
+         
 </body>
 </html>
