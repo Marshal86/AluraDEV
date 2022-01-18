@@ -17,7 +17,6 @@ h2{
 
 .principal{
     display: flex;
-    justify-content: space-between;
     margin-left: 32px;
     margin-right: 32px;
 }

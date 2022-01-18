@@ -9,7 +9,6 @@ const quadroFundo = document.querySelector('.quadro');
 botao.addEventListener('input',function(){
 
       
-      
       quadroFundo.style.background = botao.value;
 }
   
@@ -44,25 +43,51 @@ botaoH.addEventListener('click', function(){
 
 /************* Script implatanção do Higlightjs - FIM */
 
-const botaoS = document.querySelector('.menu__direito--botao')
-
-const jose = 2
 
 
+/**************Configuração Botao Salvar ****************/
 
-const evento = botaoS.addEventListener('click' , function(){
-   
-        window.open("C:/Projetos/challenge2/comunidades.html")
-        criar=1
+const BotaoS = () =>{
+    
+    let i = 0  //inicia contador
 
-     
-      
+    const botaoS = document.querySelector(".menu__direito--botao")
+    botaoS.addEventListener("click", function() {
+         
 
+        const conteudo = document.querySelector('.quadro__texto').textContent
+        const corQuadro = quadroFundo.style.background
+        const nomeProjeto = document.querySelector(".menu__direito-projeto").value
+        const nomeDescricao = document.querySelector(".menu__direito--descricao").value
 
-      
 
         
+        let info = {
+            contem:conteudo,
+            cor:corQuadro,
+            projeto:nomeProjeto,
+            descricao:nomeDescricao   
+        }
+     
+        
+        if(localStorage.length < 4){
 
-})
 
+        localStorage.setItem('item',JSON.stringify(info)) 
+        window.open(href="\\comunidades.html")
+        
+        
+        } else 
+         {
+             alert('memoria cheia')
+        
+        }
 
+    })
+
+    }
+
+        BotaoS()
+        
+    
+/**************FIM - Configuração Botao Salvar ****************/

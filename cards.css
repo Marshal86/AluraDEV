@@ -1,167 +1,127 @@
 
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Sen&display=swap');
-
-
-
-.grid{
-  display: grid;
-  grid-template-columns: 2;
-
- 
-  
-  
-}
-
 .cards{
-  display: grid;
-  grid-template-columns: auto auto;
-  grid-template-rows: auto auto;
+  display: flex;
   gap: 24px;
-  row-gap: 24px;
-  grid-column: 2;
-  transform: translate(-83px,0px);
-
-
-  
+  margin: right 24px;
+  flex-wrap: wrap;
 }
 
-.card1{
-  background-color:rgba(154, 255, 107, 1);
-}
-.card2{
-  background-color:rgba(107, 131, 255, 1);
-  
+.cards:nth-child(even){
+  margin-right: 24px;
 }
 
-.card3{
-  background-color: rgba(255, 196, 107, 1);
 
-}
-
-.card4{
-  background: rgba(255, 107, 205, 1);
-
-}
-
-.card_full{
-    width: 343px;
-    height:402px ;
-    background-color: #051D3B;
-
-  
-    
-}
-
- .card_borda{
-     width:520px ;
-     height:288px ;
-     display: flex;
-     justify-content: center;
-     align-items: center;
- }
-
- .card_borda-interno{
-     width:472px;
-     height:240px;
-     background-color:black;
-     display: flex;
-     justify-content: center;
-     align-items: center;
- }
-
-  .card_programa{
-      width:440px ;
-      height: 195px;
-      background-color: black;
-      border:none;
-      color: white;
-  }
-
-  .informacoes{
-      display: grid;
-      grid-template-columns: auto auto;
-      grid-template-rows: auto auto auto;
-      background-color: rgba(0, 0, 0, 0.16);
-      border-radius: 8px;
-  }
-
-  .informacoes_titulo{
-    grid-column: 1/2;
-    grid-row: 1;
-    font-family: 'Inter', sans-serif;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 21px;
-    line-height: 31px;
-    color: #FFFFFF;
-    margin-left: 24px;
-  }
-
-  .informacoes_sub{
-    grid-column: 1/2;
-    grid-row: 2;
-    font-family: 'Inter', sans-serif;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 16px;
-    line-height: 24px;
-    color: #FFFFFF;
-    opacity: 0.8;
-    margin-left: 24px;
-}
-
-  .comments , .heart{
-    grid-column: 1;
-    grid-row: 3;
-    font-family: 'Inter', sans-serif;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 16px;
-    line-height: 24px;
-    color: #FFFFFF;
+.card{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
  
-   
-
-
-  }
-
-  .heart{
-      margin-left:77px;
-      margin-bottom: 32px;
-      
-      
-  }
-
-  .heart::before{
-    font-family: "Font Awesome 5 Free"; font-weight: 900;
-    content: "\f004";
-    margin-right: 10px;
-  }
-
-  .comments{
-    margin-left: 30px;
-    
-  }
-
-  .comments::before{
-    font-family: "Font Awesome 5 Free"; font-weight: 900;
-    content: "\f075";
-    margin-right: 10px;
-  }
-
-  .informacoes div{
-    
-    grid-column: 2;
-    grid-row: 3;
+  width: 520px;
+  height: 464px;
+  background: rgba(4, 24, 50, 0,16);
+  
   
 
-  }
-
-  .informacoes .autor{
-   margin-bottom: 32px;
-
-  }
   
-  .informacoes .autor p::before{
-    content: "@";
-  }
+}
+
+.card__externo{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 520px;
+  height: 288px;
+  background: green;
+  border-radius: 8px;
+
+}
+
+.card__interno{
+  display: flex;
+  justify-content:center;
+  align-items: center;
+  width:472px;
+  height:240px; 
+  border-radius: 8px;
+  background-color: black;
+ 
+}
+
+.card__codigo{
+ align-items: center;
+ justify-content: center;
+ width: 440px;
+ height:195px;
+ background-color: black;
+ 
+}
+
+.card__textos{
+  display: grid;
+  grid-template-columns: 260px 260px;
+  grid-template-rows: 1fr 1fr 1fr;
+}
+
+.card__titulo{
+  grid-column: 2 span;
+  grid-row: 1;
+  font-size: 21px;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 21px;
+  line-height: 31px;
+  padding: 0 24px 0 24px;
+}
+
+.card__descricao{
+  grid-column: 2 span;
+  grid-row: 2;
+  font-family: Inter;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  font-style: normal;
+  color:  #FFFFFF;;
+  opacity: 0.8;
+  margin-top: none;
+  padding: 0 24px 0 24px;
+}
+
+.card__comentario,.card__likes{
+  grid-column: 1;
+  grid-row: 3;
+  font-family: Inter;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  font-style: normal;
+  padding: 0 24px 0 24px;
+  
+ 
+  
+  
+}
+
+.card__comentario{
+  margin-left: 64px;
+}
+
+.card__likes{
+  margin-left: 132px;
+
+}
+
+.card__usuario{
+  grid-column: 2;
+  grid-row: 3;
+  margin-left: 200px;
+  font-family: Inter;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  font-style: normal;
+  
+ 
+
+}
